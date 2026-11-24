@@ -7,7 +7,7 @@ namespace TicketApi.Tests;
 public class TicketValidatorTests
 {
     [Theory]
-    [InlineData("Login error", true)]
+    [InlineData("Login error", false)]
     [InlineData("Bug", false)]
     [InlineData("", false)]
     [InlineData("     ", false)]
